@@ -236,6 +236,18 @@
         </div>
     </section>
 
+    <script>
+        document.addEventListener('click', function (event) {
+            const navbarCollapse = document.getElementById('navbarSupportedContent');
+            const isClickInside = navbarCollapse.contains(event.target);
+            const navbarToggler = document.querySelector('.navbar-toggler');
+
+            if (!isClickInside && navbarCollapse.classList.contains('show')) {
+                navbarToggler.click();
+            }
+        });
+    </script>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
 
