@@ -728,4 +728,64 @@ a:focus {
     line-height: 1.6; /* Satýr yüksekliði artýr */
     color: #444;
 }
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Hover’da alt çizgi olmasýn */
+}
+@media (max-width: 768px) {
+    #dice_roller_game .col-md-3,
+    #quizle .col-md-3,
+    #shut_the_box .col-md-3,
+    #tabo .col-md-3,
+    #troya_event .col-md-3 {
+        max-width: 100% !important;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    #dice_roller_game .col-md-9,
+    #quizle .col-md-9,
+    #shut_the_box .col-md-9,
+    #tabo .col-md-9,
+    #troya_event .col-md-9 {
+        max-width: 100% !important;
+        text-align: center;
+    }
+
+    #dice_roller_game .col-md-3 img,
+    #quizle .col-md-3 img,
+    #shut_the_box .col-md-3 img,
+    #tabo .col-md-3 img,
+    #troya_event .col-md-3 img {
+        max-width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+.btn-custom-primary {
+    background-color: #4a90e2; /* Ýstersen kendi marka renginle deðiþtir */
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-custom-primary:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */
